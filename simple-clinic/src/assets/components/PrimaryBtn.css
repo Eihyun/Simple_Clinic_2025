@@ -1,0 +1,33 @@
+.primary-button {
+    width: 11.75rem;
+    height: 3.25rem;
+    padding: 0.625rem 1.25rem;
+    background: var(--primaryBlue);
+    border-radius: 0.375rem;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+@media (min-width: 834px) {
+    .primary-button {
+        width: 10rem;
+        height: 2.5rem;
+        padding: 0.625rem 1.25rem;
+        background: var(--primaryBlue);
+        border-radius: 0.375rem;
+        text-align: center;
+        align-items: center;
+        color: #fff;
+        font-family: "Roboto", serif;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+    }
+}
+
+.primary-button:hover {
+    background: var(--primaryDarkBlue);
+}
