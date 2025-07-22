@@ -1,15 +1,24 @@
-import { Link } from "react-router";
-import { useState } from 'react';
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from 'react';
 
+import PrimaryBtn from './PrimaryBtn';
 import './Navigation.css';
 import Dropdown from '../images/Vector 3.svg';
 
 function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
 
+    const location = useLocation();
+
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
+
+    useEffect(() => {
+        setIsOpen(false);
+    }, [location]);
+    
+    
     
     return (
         <div className="nav-container">
@@ -39,6 +48,7 @@ function Navigation() {
                     <li><Link to="/location">Location</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
                     <li><Link to="/faq">FAQ</Link></li>
+                    <PrimaryBtn />
                 </ul>
             </nav>
         </div> 

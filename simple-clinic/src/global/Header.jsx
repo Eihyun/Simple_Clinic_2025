@@ -1,32 +1,31 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 import Navigation from '../assets/components/Navigation';
-import PrimaryBtn from '../assets/components/PrimaryBtn';
+import NavMobile from '../assets/components/NavMobile';
 import Logo from '../assets/images/Logo_v1.png';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 import "./Header.css";
 
 function Header() {
+    const isDesktop = useMediaQuery("(min-width: 1440px)");
 
-    return(
-        <>
+    return (
         <header className="container">
-            <div className="flex header">
+            <div className="header flex">
 
                 {/* Logo */}
                 <Link to="/" className="header-logo flex">
-                    <img src={Logo} alt="" className="logo" />
+                    <img src={Logo} alt="Simple Clinic Logo" className="logo" />
                     <span>Simple Clinic</span>
                 </Link>
 
                 <div className="navbar flex">
-                    <Navigation />
-                    <PrimaryBtn />
+                    {isDesktop ? <Navigation /> : <NavMobile />}
+                    {/* <Navigation /> */}
                 </div>
             </div>
         </header>
-
-        </>
     );
 }
 
