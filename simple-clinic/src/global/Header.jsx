@@ -22,7 +22,6 @@ function Header() {
 
                 <div className="navbar flex">
                     {isDesktop ? <Navigation /> : <NavMobile />}
-                    {/* <Navigation /> */}
                 </div>
             </div>
         </header>

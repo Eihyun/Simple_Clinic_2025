@@ -1,14 +1,19 @@
 .nav {
     height: 100%;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
 }
 
-.navigation > ul > li:not(:nth-child(3)), .sub-menu li, .nav-bar_sub-menu {
-    padding-bottom: 0px;
-    padding-right: 24px;
-    text-align: center;
+.nav > li:last-of-type {
+    padding-right: 40px;
 }
+
+/* .nav > li:not(:nth-child(3)), .sub-menu li, .nav-bar_sub-menu {
+    padding-right: 10px;
+    text-align: center;
+} */
 
 .dropdown-menu {
     gap: 0.625rem;
@@ -16,6 +21,7 @@
 
 .sub-menu {
     position: absolute;
+    top: 5.25rem;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;

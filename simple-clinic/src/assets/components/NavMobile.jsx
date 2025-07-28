@@ -2,6 +2,8 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from 'react';
 
 import './NavMobile.css';
+import PrimaryBtn from './PrimaryBtn';
+
 import Dropdown from '../images/Vector 3.svg';
 import HamburgerIcon from '../images/ham-menu.svg';
 import CloseIcon from '../images/close.svg';
@@ -26,23 +28,27 @@ function NavMobile() {
     }, [active]);
 
     return (
-        <div className={`nav-container ${active ? 'active' : ''}`}>
+        <div className={`nav-mov-container ${active ? 'active' : ''}`}>
             <button onClick={toggleMenu} aria-label={active ? "Close menu" : "Open Menu"}>
                 <img src={active ? CloseIcon : HamburgerIcon} alt="Hamburger menu icon" />
             </button>
 
             {active && (
-                <nav className="navigation" role="navigation">
-                    <ul className="nav flex">
+                <nav className="navigation-mov" role="navigation">
+                    <ul className="nav-mov flex">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li>
-                            <button className="dropdown-menu flex" onClick={toggleDropdown}>
+                            <button className="dropdown-menu-mov flex" onClick={toggleDropdown}>
                                 <span>Our Services</span>
-                                <img src={Dropdown} alt="Dropdown menu icon" />
+                                <img 
+                                    src={Dropdown} 
+                                    alt="Dropdown-mov menu icon" 
+                                    className={`dropdown-icon ${isOpen ? "rotate" : ""}`} 
+                                />
                             </button>
                             {isOpen && (
-                                <ul className="sub-menu flex">
+                                <ul className="sub-menu-mov flex">
                                     <li><Link to="/physiotherapy">Physiotherapy</Link></li>
                                     <li><Link to="/rmt">Registered Massage Therapy</Link></li>
                                     <li><Link to="/chiropractic">Chiropractic</Link></li>
@@ -55,6 +61,7 @@ function NavMobile() {
                         <li><Link to="/location">Location</Link></li>
                         <li><Link to="/contact">Contact Us</Link></li>
                         <li><Link to="/faq">FAQ</Link></li>
+                    <PrimaryBtn />
                     </ul>
                 </nav>
             )}

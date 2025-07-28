@@ -1,9 +1,123 @@
-section {
+/* Hero */
+.hero-section {
     width: 100vw;
-    height: 40vh;
-    background-color: var(--neutralSilver);
+    background-color: var(--neutralLight);
+}
+
+.hero-container {
+    height: 44.75rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.75rem 0 7.5rem 0;
 }
 
 .hero {
     padding: 10rem 0;
+    width: 34rem;
+    color: var(--neutralGray);
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-title {
+    line-height: 4.75rem;
+}
+
+.hero-text {
+    margin-bottom: 0.75rem;
+}
+
+@media (min-width: 834px) {
+    .hero-container {
+        height: 24.25rem;
+        padding: 3.75rem 0;
+    }
+    
+    .hero {
+        gap: 0.75rem
+    }
+
+    .hero-title {
+        line-height: 3.75rem;
+    }
+    
+    .hero-text {
+        margin-bottom: 1.75rem;
+    }
+
+    .hero-image {
+        width: 18.75rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero-container {
+        height: 44.75rem;
+        padding: 3.75rem 0 7.5rem 0;
+    }
+
+    .hero {
+        padding: 10rem 0;
+        width: 34rem;
+        gap: 1.5rem;
+    }
+
+    .hero-title {
+        line-height: 4.75rem;
+    }
+
+    .hero-text {
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Services */
+.services-section {
+    padding: 3.75rem 0;
+}
+
+.services-container {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    color: var(--neutralGray);
+}
+
+.services-icons {
+    height: 15rem;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.services {
+    align-items: center;
+}
+
+.service {
+    width: 10.25rem;
+    text-align: center;
+}
+
+.service > img {
+    width: 4.8rem;
+}
+
+/* About Us */
+.about-section {
+    padding: 3.75rem 0;
+}
+
+.about-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about {
+    flex-direction: column;
+    width: 43.75rem;
+    gap: 1.5rem;
+}
+
+.about-text {
+    margin-bottom: 1.5rem;
 }
