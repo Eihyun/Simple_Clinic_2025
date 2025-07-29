@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import './NavMobile.css';
 import PrimaryBtn from './PrimaryBtn';
 
-import Dropdown from '../images/Vector 3.svg';
+import Dropdown from '../images/dropdown_open.svg';
 import HamburgerIcon from '../images/ham-menu.svg';
 import CloseIcon from '../images/close.svg';
 

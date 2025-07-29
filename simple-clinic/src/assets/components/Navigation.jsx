@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 import PrimaryBtn from './PrimaryBtn';
 import './Navigation.css';
-import Dropdown from '../images/Vector 3.svg';
+import Dropdown from '../images/dropdown.svg';
 
 function Navigation() {
     const [isOpen, setIsOpen] = useState(false);

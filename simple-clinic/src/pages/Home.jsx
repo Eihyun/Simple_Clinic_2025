@@ -15,10 +15,11 @@ import PhysioIcon from '../assets/images/icon-physio.svg';
 import KinesioIcon from '../assets/images/icon-kinesio.svg';
 import AcupunIcon from '../assets/images/icon-acupun.svg';
 import PilatesIcon from '../assets/images/icon-pilates.svg';
+import IcbcIcon from '../assets/images/icon-icbc.svg';
 
 import { 
     RiAwardFill, 
-    RiCalendarCheckLine,
+    RiCalendarCheckFill,
     RiMoneyDollarCircleLine
 } from '@remixicon/react';
 
@@ -53,9 +54,8 @@ function Home() {
                     <h2 className="services-title">
                         Our Services
                     </h2>
-                    <div className="services flex">
-                        <div className="services-icons flex">
-
+                    <div className="services-icons flex">
+                        <div className="services flex">
                             <div className="service">
                                 <img src={ChiroIcon} />
                                 <p className="icon-label">Chiropractic</p>
@@ -106,11 +106,34 @@ function Home() {
 
             <section className="uvp-section">
                 <div className="uvp-container container flex">
-                    <div className="uvp">
+                    <div className="uvp flex">
                         <RiAwardFill 
-                            size={36}
+                            size={60}
                             className="uvp-icon"
                         />
+                        <h3>Certified Practitioners</h3>
+                        <p>Our team of experienced and certified healthcare professionals is dedicated to your well-being. We offer a range of therapeutic services tailored to support recovery, relieve pain, and help you feel your best with care that’s personalized to your needs.</p>
+                    </div>
+                    <div className="uvp flex">
+                        <RiCalendarCheckFill
+                            size={60}
+                            className="uvp-icon"
+                        />
+                        <h3>Walk-In or Online Booking</h3>
+                        <p>Whether you prefer to walk in or schedule online, booking your appointment is quick and simple with our hassle-free system. Plus, we often have same-day availability for your convenience.</p>
+                    </div>
+                    <div className="uvp flex">
+                        <RiMoneyDollarCircleLine
+                            size={60}
+                            className="uvp-icon"
+                        />
+                        <h3>Seamless Direct Billing</h3>
+                        <p>We make payment easy. Most of our practitioners offer direct billing to ICBC and private insurance providers, so you can focus on your recovery without worrying about paperwork.</p>
+                    </div>
+                    <div className="uvp flex">
+                        <img src={IcbcIcon} className="uvp-icon icbc" />
+                        <h3>Comprehensive ICBC Services</h3>
+                        <p>In our clinic, we offer a range of ICBC-covered services, including massage therapy, physiotherapy, active rehab, and acupuncture, ensuring your comprehensive care.</p>
                     </div>
                 </div>
 
