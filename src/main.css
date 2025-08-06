@@ -1,0 +1,225 @@
+@import url("https://use.typekit.net/qwt3xns.css");
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #root {
+    /* Send Footer to Bottom */
+    min-height: 100vh;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Colors */
+:root {
+    --primaryBlue: #0F4D96;
+    --primaryDarkBlue: #05244D;
+    --secondaryRed: #D40F12;
+    --secondaryDarkRed: #D40F12;
+    --neutralLight: #F4F4F4;
+    --neutralLightGray: #D4D4D4;
+    --neutralGray: #404040;
+    --neutralDark: #1D1C1C;
+    --neutralSilver: #F5F7FA;
+    --mediumGray: #9E9E9E;
+}
+
+body, html {
+    font-size: 1rem;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    line-height: normal;
+    color: inherit;
+    font: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, a, span, .icon-label {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--neutralDark);
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+p {
+    font-family: "Inter-variable", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: var(--neutralDark);
+}
+
+.icon-label {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+/* Tablet font */
+@media screen and (min-width: 834px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 3.75rem;
+    }
+}
+
+/* Desktop font */
+@media screen and (min-width: 1440px) {
+    h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 4.75rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 2.75rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+    .icon-label {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+input, select, textarea {
+    font: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 20rem;
+    width: 70vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.col-1-sm { grid-column: span 1; }
+.col-2-sm { grid-column: span 2; }
+.col-3-sm { grid-column: span 3; }
+.col-4-sm { grid-column: span 4; }
+
+/* Tablet grid*/
+@media (min-width: 834px) {
+    .container {
+        min-width: 48.125rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+    }
+
+    .col-1-md { grid-column: span 1; }
+    .col-2-md { grid-column: span 2; }
+    .col-3-md { grid-column: span 3; }
+    .col-4-md { grid-column: span 4; }
+    .col-5-md { grid-column: span 5; }
+    .col-6-md { grid-column: span 6; }
+    .col-7-md { grid-column: span 7; }
+    .col-8-md { grid-column: span 8; }
+    .col-9-md { grid-column: span 9; }
+    .col-10-md { grid-column: span 10; }
+    .col-11-md { grid-column: span 11; }
+    .col-12-md { grid-column: span 12; }
+}
+
+/* Desktop grid */
+@media screen and (min-width: 1440px) {
+    .container {
+        min-width: 80rem;
+    }
+
+    .grid {
+        gap: 1.25rem;
+    }
+
+    .col-1-lg { grid-column: span 1; }
+    .col-2-lg { grid-column: span 2; }
+    .col-3-lg { grid-column: span 3; }
+    .col-4-lg { grid-column: span 4; }
+    .col-5-lg { grid-column: span 5; }
+    .col-6-lg { grid-column: span 6; }
+    .col-7-lg { grid-column: span 7; }
+    .col-8-lg { grid-column: span 8; }
+    .col-9-lg { grid-column: span 9; }
+    .col-10-lg { grid-column: span 10; }
+    .col-11-lg { grid-column: span 11; }
+    .col-12-lg { grid-column: span 12; }
+}
+
+/* Typography */
+.inter { font-family: "Inter", sans-serif; }
+.roboto { font-family: "Roboto", serif; }

@@ -1,0 +1,45 @@
+.slider {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.875rem;
+    width: 20rem;
+}
+
+.slick-slide > div {
+    background-color: #FAF7F7;
+    padding: 1.5rem;
+    border-radius: 0.875rem;
+    width: 16rem;
+}
+
+.slide-profile {
+    gap: 1.5rem;
+}
+
+.slide-profile > img {
+    object-fit: contain;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--mediumGray);
+}
+
+.slick-dots li button:before {
+    color: #D9D9D9;
+}
+
+@media screen and (min-width: 834px) {
+    .slider {
+        width: 37.125rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .slider {
+        width: 80rem;
+    }
+
+    .slick-slide > div {
+        width: 25rem;
+    }
+}
