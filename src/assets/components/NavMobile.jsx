@@ -24,8 +24,22 @@ function NavMobile() {
 
     // Prevent scrolling when menu is open
     useEffect(() => {
-        document.body.style.overflow = active ? 'hidden' : 'auto';
+        if (active) {
+            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+            document.body.style.overflow = 'hidden';
+        if (scrollBarWidth > 0) {
+            document.body.style.paddingRight = `${scrollBarWidth}px`;
+        }
+        } else {
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+        }
+        return () => {
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+        };
     }, [active]);
+
 
     return (
         <div className={`nav-mob-container ${active ? 'active' : ''}`}>
