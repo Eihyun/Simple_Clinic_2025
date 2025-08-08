@@ -37,7 +37,7 @@ function Navigation() {
                         {isOpen && (
                             <ul className="sub-menu flex">
                                 <li><Link to="/physiotherapy">Physiotherapy</Link></li>
-                                <li><Link to="/rmt">Registered Massage Therapy</Link></li>
+                                <li><Link to="/rmt">Registered massage therapy</Link></li>
                                 <li><Link to="/chiropractic">Chiropractic</Link></li>
                                 <li><Link to="/kinesiology">Kinesiology</Link></li>
                                 <li><Link to="/acupucture">Acupucture</Link></li>

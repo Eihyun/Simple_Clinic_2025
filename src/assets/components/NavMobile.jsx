@@ -24,8 +24,22 @@ function NavMobile() {
 
     // Prevent scrolling when menu is open
     useEffect(() => {
-        document.body.style.overflow = active ? 'hidden' : 'auto';
+        if (active) {
+            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+            document.body.style.overflow = 'hidden';
+        if (scrollBarWidth > 0) {
+            document.body.style.paddingRight = `${scrollBarWidth}px`;
+        }
+        } else {
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+        }
+        return () => {
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
+        };
     }, [active]);
+
 
     return (
         <div className={`nav-mob-container ${active ? 'active' : ''}`}>
@@ -50,7 +64,7 @@ function NavMobile() {
                             {isOpen && (
                                 <ul className="sub-menu-mob flex">
                                     <li><Link to="/physiotherapy">Physiotherapy</Link></li>
-                                    <li><Link to="/rmt">Registered Massage Therapy</Link></li>
+                                    <li><Link to="/rmt">Registered massage therapy</Link></li>
                                     <li><Link to="/chiropractic">Chiropractic</Link></li>
                                     <li><Link to="/kinesiology">Kinesiology</Link></li>
                                     <li><Link to="/acupuncture">Acupuncture</Link></li>

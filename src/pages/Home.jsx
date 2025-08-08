@@ -9,6 +9,7 @@ import './Home.css';
 import PrimaryBtn from '../assets/components/PrimaryBtn';
 import Testimonial from '../assets/components/Testimonial';
 import Map from '../assets/components/Map';
+import Form from '../assets/components/Form';
 
 // icons
 import ChiroIcon from '../assets/images/icon-chiro.svg';
@@ -152,11 +153,12 @@ function Home() {
             {/* Contact Us */}
             <section className="h-contact-section">
                 <div className="h-contact-container container flex">
-                    <div className="h-contact flex">
+                    <div className="h-contact-title flex">
                         <h2>Contact Us</h2>
                     </div>
-                    <div>
+                    <div className="h-contact">
                         <Map />
+                        <Form />
                     </div>
                 </div>
             </section>

@@ -37,6 +37,7 @@ html, body, #root {
     --neutralLightGray: #D4D4D4;
     --neutralGray: #404040;
     --neutralDark: #1D1C1C;
+    --neutralDarkGray: #505050;
     --neutralSilver: #F5F7FA;
     --mediumGray: #9E9E9E;
 }
@@ -136,12 +137,12 @@ p {
     .icon-label {
         font-size: 1.25rem;
         line-height: 1.75rem;
+        font-weight: 500;
     }
 }
 
 input, select, textarea {
     font: inherit;
-    color: inherit;
     font-size: inherit;
 }
 
