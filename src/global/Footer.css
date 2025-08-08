@@ -1,3 +1,8 @@
+.footer {
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
 .footer-container {
     flex-direction: column;
     align-items: center;
@@ -21,9 +26,21 @@
 }
 
 .footer-col > ul > li {
-    height: 3rem;
+    height: 2.5rem;
     font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: capitalize;
     line-height: 1.5rem;
+}
+
+@media screen and (min-width: 834px) {
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer-col > ul > li {
+    height: 3rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {

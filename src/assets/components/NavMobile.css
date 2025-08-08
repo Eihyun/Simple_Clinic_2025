@@ -1,10 +1,11 @@
 .navigation-mob {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 5.235rem; left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-transform: capitalize;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.05) -4px 5px 30px;
     z-index: 1;
@@ -12,8 +13,9 @@
 
 .nav-mob {
     flex-direction: column;
-    width: 375px;
-    padding: 1.5rem;
+    min-width: 20rem;
+    width: 70vw;
+    padding: 1.5rem 0;
     gap: 1.5rem;
 }
 
@@ -39,18 +41,16 @@
 }
 
 .sub-menu-mob > li {
-    width: 187px;
+    width: 12rem;
 }
 
 @media screen and (min-width: 834px) {
     .nav-mob {
-        flex-direction: column;
-        width: 834px;
-        padding: 2rem;
-        gap: 1.5rem;
+        min-width: 48.125rem;
+        padding: 2rem 0;
     }
     
     .sub-menu-mob > li {
-        width: 637px;
+        width: 40rem;
     }
 }

@@ -50,7 +50,7 @@ function NavMobile() {
                             {isOpen && (
                                 <ul className="sub-menu-mob flex">
                                     <li><Link to="/physiotherapy">Physiotherapy</Link></li>
-                                    <li><Link to="/rmt">Registered Massage Therapy</Link></li>
+                                    <li><Link to="/rmt">Registered massage therapy</Link></li>
                                     <li><Link to="/chiropractic">Chiropractic</Link></li>
                                     <li><Link to="/kinesiology">Kinesiology</Link></li>
                                     <li><Link to="/acupuncture">Acupuncture</Link></li>
