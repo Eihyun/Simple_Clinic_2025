@@ -20,12 +20,12 @@ function Footer() {
                         </div>
                         <p>604-336-7773</p>
                         <p>info@simpleclinic.ca</p>
-                        <p>3833 Ruper Street,<br /> Vancouver, BC, V5R 2G7</p>
+                        <p>3833 Ruper Street,<br /> Vancouver, BC<br />V5R 2G7</p>
                     </div>
 
                     {/* Explore */}
                     <div className="footer-col flex">
-                        <p className="icon-label">Explore</p>
+                        <p className="icon-lable">Explore</p>
                         <ul>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About Us</Link></li>
@@ -34,7 +34,7 @@ function Footer() {
 
                     {/* Quick Search */}
                     <div className="footer-col flex">
-                        <p className="icon-label">Our Services</p>
+                        <p className="icon-lable">Our Services</p>
                         <ul>
                             <li><Link to="/physiotherapy">Physiotherapy</Link></li>
                             <li><Link to="/rmt">Registered massage therapy</Link></li>
@@ -47,7 +47,7 @@ function Footer() {
 
                     {/* Booking */}
                     <div className="footer-col flex">
-                        <p className="icon-label">Book Your Appointment Today!</p>
+                        <p className="icon-lable">Book Your Appointment Today!</p>
                         <p>Monday - Saturday: 9:00-13:00</p>
                         <p>Sunday: Closed</p>
                         <PrimaryBtn />
