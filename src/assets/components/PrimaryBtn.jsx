@@ -3,9 +3,11 @@ import './PrimaryBtn.css';
 function PrimaryBtn() {
 
     return (
-        <button className="cta primary-button">
-            Book Appointment
-        </button>
+        <a href="https://simpleclinic.janeapp.com/locations/simple-clinic/book" target='_blank'>
+            <button className="cta primary-button">
+                Book Appointment
+            </button>
+        </a>
     )
 }
 
